@@ -1,0 +1,14 @@
+---
+layout: astra
+sidebar: sidebar
+permalink: index.html
+lead: NetApp Cloud Volumes Service for Google Cloud is an integrated file service with advanced data management capabilities that deliver the performance, availability, and security required to migrate and run your enterprise workloads in the cloud. These docs describe how to manage Cloud Volumes Service for Google Cloud by using NetApp Cloud Manager.
+summary: NetApp Cloud Volumes Service for Google Cloud is an integrated file service with advanced data management capabilities that deliver the performance, availability, and security required to migrate and run your enterprise workloads in the cloud. These docs describe how to manage Cloud Volumes Service for Google Cloud by using NetApp Cloud Manager.
+---
+
+= Cloud Volumes Service for Google Cloud documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
