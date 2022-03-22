@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes
-summary: Learn what's new with Cloud Volumes Service for Google Cloud support in Cloud Manager.
+keywords: what's new, features, new, release notes
+summary: Learn what's new with Cloud Volumes Service for Google Cloud in Cloud Manager.
 ---
 
 = What's new
@@ -13,9 +13,9 @@ summary: Learn what's new with Cloud Volumes Service for Google Cloud support in
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new with Cloud Volumes Service for Google Cloud support in Cloud Manager.
+Learn what's new with Cloud Volumes Service for Google Cloud in Cloud Manager.
 
-tag::whats-new[]
+//tag::whats-new[]
 == 9 Sept 2020
 
 === Support for Cloud Volumes Service for Google Cloud
@@ -26,4 +26,4 @@ You can now manage Cloud Volumes Service for Google Cloud directly from Cloud Ma
 * Create and manage NFSv3 and NFSv4.1 volumes for Linux and UNIX clients
 * Create and manage SMB 3.x volumes for Windows clients
 *	Create, delete, and restore volume snapshots
-end::whats-new[]
+//end::whats-new[]

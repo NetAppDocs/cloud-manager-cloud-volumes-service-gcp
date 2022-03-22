@@ -15,7 +15,7 @@ summary: NetApp Cloud Volumes Service for Google Cloud enables you to quickly ad
 [.lead]
 NetApp Cloud Volumes Service for Google Cloud enables you to quickly add multi-protocol workloads as well as build and deploy both Windows-based and UNIX-based apps.
 
-== Key features:
+== Key features
 
 * Migrate data between on-premises and Google Cloud.
 
