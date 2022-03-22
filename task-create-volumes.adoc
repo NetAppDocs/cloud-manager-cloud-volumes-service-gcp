@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: task-manage-cvs-gcp.html
-keywords: cloud volumes service for gcp, google cloud, cloud volumes, create cloud volumes, delete cloud volumes, discover region, service level, allowed clients, create snapshots
-summary: Cloud Manager enables you to create cloud volumes based on your Cloud Volumes Service for Google Cloud subscription. You can also edit certain attributes of a volume, get the relevant mount commands, create snapshot copies, and delete cloud volumes.
+permalink: task-create-volumes.html
+keywords: cloud volumes service for gcp, google cloud, cloud volumes, create cloud volumes, mount volume
+summary: Cloud Manager enables you to create cloud volumes based on your Cloud Volumes Service for Google Cloud subscription. After you create a volume, get the relevant mount commands so that you can mount the volume to a client.
 ---
 
-= Create and manage volumes for Cloud Volumes Service for Google Cloud
+= Create and mount volumes
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,9 @@ summary: Cloud Manager enables you to create cloud volumes based on your Cloud V
 :imagesdir: ./media/
 
 [.lead]
-Cloud Manager enables you to create cloud volumes based on your link:https://console.cloud.google.com/marketplace/product/endpoints/cloudvolumesgcp-api.netapp.com?q=cloud%20volumes%20service[Cloud Volumes Service for Google Cloud^] subscription. You can also edit certain attributes of a volume, get the relevant mount commands, create snapshot copies, and delete cloud volumes.
+Cloud Manager enables you to create cloud volumes based on your Cloud Volumes Service for Google Cloud subscription. After you create a volume, get the relevant mount commands so that you can mount the volume to a client.
 
-== Create cloud volumes
+== Create volumes
 
 You can create NFS or SMB volumes in a new or existing Cloud Volumes Service for Google Cloud account. Cloud volumes currently support NFSv3 and NFSv4.1 for Linux and UNIX clients, and SMB 3.x for Windows clients.
 
@@ -101,7 +101,7 @@ Continue with link:task-manage-cvs-gcp.html#mount-the-cloud-volume[Mounting the 
 
 Access mounting instructions from within Cloud Manager so you can mount the volume to a host.
 
-*Note:* Please use the highlighted protocol/dialect supported by your client.
+NOTE: Use the highlighted protocol/dialect supported by your client.
 
 .Steps
 . Open the working environment.
@@ -124,96 +124,3 @@ image:screenshot_cvs_aws_smb_mount.png[Mount instructions for SMB volumes]
 . Map your network drive by following the mount instructions for your instance.
 +
 After completing the steps in the mount instructions, you have successfully mounted the cloud volume to your GCP instance.
-
-== Manage existing volumes
-
-You can manage existing volumes as your storage needs change. You can view, edit, restore, and delete volumes.
-
-.Steps
-
-. Open the working environment.
-. Hover over the volume.
-+
-image:screenshot_cvs_gcp_volume_hover_menu.png[A screenshot of the volume hover menu that allows you to perform volume tasks]
-. Manage your volumes:
-+
-[cols=2*,options="header",cols="30,70"]
-|===
-
-| Task
-| Action
-
-| View information about a volume | Click *Info*.
-
-| Edit a volume (including snapshot policy)
-a|
-.. Click *Edit*.
-.. Modify the volume's properties and then click *Update*.
-
-| Get the NFS or SMB mount command
-a|
-.. Click *Mount the volume*.
-.. Click *Copy* to copy the command(s).
-
-| Create a Snapshot copy on demand
-a|
-.. Click *Create a Snapshot copy*.
-.. Change the name, if needed, and then click *Create*.
-
-| Replace the volume with the contents of a Snapshot copy
-a|
-.. Click *Revert volume to snapshot*.
-.. Select a Snapshot copy and click *Restore*.
-
-| Delete a Snapshot copy
-a|
-.. Click *Delete a Snapshot copy*.
-.. Select the snapshot and click *Delete*.
-.. Click *Delete* again when prompted to confirm.
-
-| Delete a volume
-a|
-.. Unmount the volume from all clients:
-* On Linux clients, use the `umount` command.
-* On Windows clients, click *Disconnect network drive*.
-.. Select a volume, and then click *Delete*.
-.. Click *Delete* again to confirm.
-
-|===
-
-== Remove Cloud Volumes Service from Cloud Manager
-
-You can remove a Cloud Volumes Service for Google Cloud subscription and all existing volumes from Cloud Manager. The volumes are not deleted, they are just removed from the Cloud Manager interface.
-
-.Steps
- . Open the working environment.
- . Click the image:screenshot_gallery_options.gif[] button at the top of the page and click *Remove Cloud Volumes Service*.
-. In the confirmation dialog box, click *Remove*.
-
-== Manage Active Directory configuration
-
-If you change your DNS servers or Active Directory domain, you need to modify the SMB server in Cloud Volumes Services so that it can continue to serve storage to clients.
-
-.Steps
-. Open the working environment.
-. Click the image:screenshot_gallery_options.gif[] button at the top of the page and click *Manage Active Directory*.
-If no Active Directory is configured, you can add one now. If one is configured, you can modify or delete the settings using the image:screenshot_gallery_options.gif[] button.
-. Specify the settings for the SMB server:
-+
-[cols=2*,options="header",cols="25,75"]
-|===
-| Field
-| Description
-
-| DNS Primary IP Address | The IP addresses of the DNS servers that provide name resolution for the SMB server. Use a comma to separate the IP addresses when referencing multiple servers, for example, 172.31.25.223, 172.31.2.74.
-
-| Active Directory Domain to join | The FQDN of the Active Directory (AD) domain that you want the SMB server to join.
-
-| SMB Server NetBIOS name | A NetBIOS name for the SMB server that will be created.
-
-| Credentials authorized to join the domain | The name and password of a Windows account with sufficient privileges to add computers to the specified Organizational Unit (OU) within the AD domain.
-
-| Organizational Unit | The organizational unit within the AD domain to associate with the SMB server. The default is CN=Computers for connections to your own Windows Active Directory server.
-
-|===
-. Click *Save* to save your settings.
