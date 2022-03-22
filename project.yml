@@ -9,7 +9,7 @@ sidebar:
   entries:
     - title: Back to Cloud Manager documentation
       url: https://docs.netapp.com/us-en/cloud-manager-family
-    - title: Cloud Volumes Service for GCP docs
+    - title: Cloud Volumes Service for Google Cloud docs
       url: /index.html
     - title: Release notes
       url: /whats-new.html
