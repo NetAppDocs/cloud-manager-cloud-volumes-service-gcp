@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-manage-cloud-volumes-gcp-snapshots.html
+permalink: task-manage-snapshots.html
 keywords: Cloud Volumes Service for Google Cloud, gcp, snapshots, on-demand, snapshot schedule
 summary: You can create a snapshot policy for each volume so that you can recover or restore the entire contents of a volume from an earlier time. You can also create an on-demand snapshot of a cloud volume when needed.
 ---

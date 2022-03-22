@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: task-manage-volumes.html
+keywords: manage volumes, mount command, delete volume, edit volume, edit snapshot policy
+summary: You can manage existing volumes as your storage needs change. You can view, edit, restore, and delete volumes.
+---
+
+= Manage existing volumes
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can manage existing volumes as your storage needs change. You can view, edit, restore, and delete volumes.
+
+.Steps
+
+. Open the working environment.
+
+. Hover over the volume.
++
+image:screenshot_cvs_gcp_volume_hover_menu.png[A screenshot of the volume hover menu that allows you to perform volume tasks]
+
+. Manage your volumes:
++
+[cols=2*,options="header",cols="30,70"]
+|===
+
+| Task
+| Action
+
+| View information about a volume | Click *Info*.
+
+| Edit a volume (including snapshot policy)
+a|
+.. Click *Edit*.
+.. Modify the volume's properties and then click *Update*.
+
+| Get the NFS or SMB mount command
+a|
+.. Click *Mount the volume*.
+.. Click *Copy* to copy the command(s).
+
+| Create a Snapshot copy on demand
+a|
+.. Click *Create a Snapshot copy*.
+.. Change the name, if needed, and then click *Create*.
+
+| Replace the volume with the contents of a Snapshot copy
+a|
+.. Click *Revert volume to snapshot*.
+.. Select a Snapshot copy and click *Restore*.
+
+| Delete a Snapshot copy
+a|
+.. Click *Delete a Snapshot copy*.
+.. Select the snapshot and click *Delete*.
+.. Click *Delete* again when prompted to confirm.
+
+| Delete a volume
+a|
+.. Unmount the volume from all clients:
+* On Linux clients, use the `umount` command.
+* On Windows clients, click *Disconnect network drive*.
+.. Select a volume, and then click *Delete*.
+.. Click *Delete* again to confirm.
+
+|===
