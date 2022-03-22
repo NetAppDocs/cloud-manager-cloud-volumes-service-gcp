@@ -101,7 +101,7 @@ Continue with link:task-manage-cvs-gcp.html#mount-the-cloud-volume[Mounting the 
 
 Access mounting instructions from within Cloud Manager so you can mount the volume to a host.
 
-*Note:* Please use the highlighted protocol/dialect supported by your client.
+NOTE: Use the highlighted protocol/dialect supported by your client.
 
 .Steps
 . Open the working environment.

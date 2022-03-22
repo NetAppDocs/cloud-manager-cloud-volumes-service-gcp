@@ -89,4 +89,4 @@ The volume is created in the working environment.
 
 .After you finish
 
-Continue with link:task-manage-cvs-gcp.html#mount-cloud-volumes[Mounting the cloud volume^].
+Continue with link:task-create-volumes.html#mount-cloud-volumes[Mounting the cloud volume].
