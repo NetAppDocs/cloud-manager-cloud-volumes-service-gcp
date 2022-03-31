@@ -1,0 +1,45 @@
+---
+sidebar: sidebar
+permalink: task-manage-active-directory.html
+keywords: active directory, dns, domain, dns servers, smb server
+summary: If you changed your DNS servers or Active Directory domain, you need to modify the SMB server in Cloud Volumes Service so that it can continue to serve storage to clients.
+---
+
+= Manage your Active Directory configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If you changed your DNS servers or Active Directory domain, you need to modify the SMB server in Cloud Volumes Service so that it can continue to serve storage to clients.
+
+.Steps
+
+. Open the working environment.
+
+. Click the image:screenshot_gallery_options.gif[] button at the top of the page and click *Manage Active Directory*.
++
+If no Active Directory is configured, you can add one now. If one is configured, you can modify or delete the settings using the image:screenshot_gallery_options.gif[] button.
+
+. Specify the settings for the SMB server:
++
+[cols=2*,options="header",cols="25,75"]
+|===
+| Field
+| Description
+
+| DNS Primary IP Address | The IP addresses of the DNS servers that provide name resolution for the SMB server. Use a comma to separate the IP addresses when referencing multiple servers, for example, 172.31.25.223, 172.31.2.74.
+
+| Active Directory Domain to join | The FQDN of the Active Directory (AD) domain that you want the SMB server to join.
+
+| SMB Server NetBIOS name | A NetBIOS name for the SMB server that will be created.
+
+| Credentials authorized to join the domain | The name and password of a Windows account with sufficient privileges to add computers to the specified Organizational Unit (OU) within the AD domain.
+
+| Organizational Unit | The organizational unit within the AD domain to associate with the SMB server. The default is CN=Computers for connections to your own Windows Active Directory server.
+
+|===
+
+. Click *Save* to save your settings.
