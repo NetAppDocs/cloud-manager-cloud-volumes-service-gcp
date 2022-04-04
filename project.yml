@@ -55,11 +55,11 @@ homepage:
           url: concept-cvs-gcp.html
         - title: Quick start
           url: task-quick-start.html
-    - title: Use Cloud Volumes Service for Google Cloud
+    - title: Use Cloud Volumes Service
       links:
         - title: Create volumes
           url: task-create-volumes.html
-        - title: Manage cloud snapshots
+        - title: Manage cloud volumes snapshots
           url: task-manage-snapshots.html
     - title: Blogs & community
       links:
