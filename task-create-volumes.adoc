@@ -89,13 +89,15 @@ image:screenshot_cvs_smb_details.png[A screenshot that shows the volume page fil
 
 . In the Snapshot Policy page, you can enable Cloud Volumes Service to create snapshot copies of your volumes based on a schedule. You can do this now by moving the selector to the right, or you can edit the volume later to define the snapshot policy.
 +
-See link:task-manage-cloud-volumes-gcp-snapshots.html#create_or_modify_a_snapshot_policy[Creating a snapshot policy^] for more information about snapshot functionality.
+Learn how to link:task-manage-snapshots.html[create a snapshot policy].
 
 . Click *Add Volume*.
 
+.Result
+
 The new volume is added to the working environment.
 
-Continue with link:task-manage-cvs-gcp.html#mount-the-cloud-volume[Mounting the cloud volume].
+Continue with mounting the cloud volume.
 
 == Mount cloud volumes
 

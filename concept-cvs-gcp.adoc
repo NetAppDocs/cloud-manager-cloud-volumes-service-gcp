@@ -37,7 +37,7 @@ link:https://console.cloud.google.com/marketplace/product/endpoints/cloudvolumes
 
 == Supported regions
 
-link:https://cloud.google.com/solutions/partners/netapp-cloud-volumes/regional-availability[View supported Google Cloud regions^]
+https://cloud.netapp.com/cloud-volumes-global-regions#cvsGc[View supported Google Cloud regions^]
 
 == Before you get started
 
