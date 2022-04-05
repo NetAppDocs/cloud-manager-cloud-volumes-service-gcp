@@ -16,7 +16,7 @@ summary: Learn what's new with Cloud Volumes Service for Google Cloud in Cloud M
 Learn what's new with Cloud Volumes Service for Google Cloud in Cloud Manager.
 
 //tag::whats-new[]
-== 9 Sept 2020
+== 9 September 2020
 
 === Support for Cloud Volumes Service for Google Cloud
 
